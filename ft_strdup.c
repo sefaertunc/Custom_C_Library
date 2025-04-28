@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+static size_t	get_len(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		++i;
+	return (i);
+}
+
 char	*ft_strdup(const char *s)
 {
 	size_t	s_len;
@@ -19,7 +29,7 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 
 	i = 0;
-	s_len = ft_strlen(s);
+	s_len = get_len(s);
 	ptr = malloc(s_len + 1);
 	if (!ptr)
 		return (0);
