@@ -15,7 +15,7 @@ int main(void)
         { "abcdef",   'd', 3, -1 },  /* n too small, no match */
         { "abc\0xyz", '\0', 7,  3 },  /* match null byte within raw memory */
         { "hello",    'z', 5, -1 },  /* no such character */
-        { "hello",    256,5,  0 }   /* 256 → (unsigned char)0, matches at offset 5 if n>5? here n=5 so no; expect -1 */
+        { "hello",    360,5,  0 }   /* 256 → (unsigned char)0, matches at offset 5 if n>5? here n=5 so no; expect -1 */
     };
     size_t n_tests = sizeof(tests) / sizeof(tests[0]);
     int    ok      = 1;

@@ -14,7 +14,7 @@ int main(void)
         { "Hello", 3,  5, 2, "He"    },
         { "",      5,  0, 0, ""      },
         { "Test",  1,  4, 0, ""      },
-        { "AB",    2,  2, 2, "AB"    },
+        { "AB",    2,  2, 1, "A"    },
         { "AB",    0,  2, 0, ""      }
     };
     size_t n_tests = sizeof(tests) / sizeof(tests[0]);

@@ -15,7 +15,7 @@ int main(void)
         /* size == dst_len: no append, ret = size + src_len */
         { "Hello", " World", 5,  "Hello",              11 },
         /* size < dst_len: no append, ret = size + src_len */
-        { "Hello", "42Vienna", 3, "Hel",               13 },
+        { "Hello", "42Vienna", 3, "Hello",               11 },
         /* partial append: size-dst_len-1 = 1 char */
         { "Hi",    "There",    4,  "HiT",                7 },
         /* partial append: copy 6 of 8 src chars */
