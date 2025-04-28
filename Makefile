@@ -79,9 +79,9 @@ test: all
 		echo "\nCompiling and testing $$file..."; \
 		$(CC) $(CFLAGS) $$file libft.a -I. -o testfile; \
 		if ./testfile; then \
-			echo "$(GREEN)PASS$(NC) $$file"; \
-		else \
 			echo "$(RED)FAIL$(NC) $$file"; \
+		else \
+			echo "$(GREEN)PASS$(NC) $$file"; \
 		fi; \
 		rm -f testfile; \
 	done
