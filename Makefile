@@ -79,7 +79,3 @@ test: all
 		fi; \
 		rm -f testfile; \
 	done
-
-
-clean_tests:
-	@rm -f testfile
