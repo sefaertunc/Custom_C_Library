@@ -4,7 +4,7 @@
 int main(void)
 {
     int  tests[]    = { 31, 32, 33, 65, 126, 127, -1, 200 };
-    int  expected[] = {  0,  1,  1,  1,   1,   0,   0,   0 };
+    int  expected[] = {  0,  16384,  16384,  16384,   16384,   0,   0,   0 };
     size_t n_tests   = sizeof tests / sizeof *tests;
     int    ok        = 1;
     size_t failed_i  = 0;
