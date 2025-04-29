@@ -83,7 +83,7 @@ static int	fill_split(char **arr, const char *s, char c)
 			is_start = 0;
 		++i;
 	}
-	arr[j] = '\0';
+	arr[j] = 0;
 	return (1);
 }
 
