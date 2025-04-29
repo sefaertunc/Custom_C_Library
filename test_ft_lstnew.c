@@ -13,7 +13,7 @@ int main(void)
     }
     else
     {
-        if (node->content != (void *)"Hello")
+        if (ft_strncmp(node->content,"Hello",5) != 0)
         {
             ok = 0; failed = 0;
         }
