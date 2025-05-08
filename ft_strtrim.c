@@ -6,7 +6,7 @@
 /*   By: sefaertnc <sefaertnc@student.42vienna.com> :+:  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:30:44 by sefaertnc         #+#    #+#             */
-/*   Updated: 2025/04/24 14:30:44 by sefaertnc        ###   ########.fr       */
+/*   Updated: 2025/05/08 17:05:21 by mertunc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	total_length;
 
-	if (!s1)
-		return (ft_strdup(""));
-	if (!set)
+	if (!s1 || !set)
+		return (NULL);
+	if (!*set)
 		return (ft_strdup(s1));
 	start = 0;
 	while (s1[start] && char_is_in_set(s1[start], set))
