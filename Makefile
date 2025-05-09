@@ -43,5 +43,5 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-# Rebuild everything
+# Rebuild everything again
 re: fclean all
