@@ -18,8 +18,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	str_len;
 
+	if (!s)
+		return (0);
 	str_len = ft_strlen(s);
-	if (!s || str_len <= (size_t)start)
+	if (str_len <= (size_t)start)
 		return (ft_strdup(""));
 	if (len > str_len - start)
 		len = str_len - start;
