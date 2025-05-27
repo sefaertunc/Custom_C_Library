@@ -38,7 +38,7 @@ static int	get_array_length(char const *s, char c)
 	return (count);
 }
 
-char	*make_word(char const *s, char c)
+static char	*make_word(char const *s, char c)
 {
 	size_t	i;
 
@@ -48,7 +48,7 @@ char	*make_word(char const *s, char c)
 	return (ft_substr(s, 0, i));
 }
 
-void	free_split(char **arr, size_t length)
+static void	free_split(char **arr, size_t length)
 {
 	size_t	i;
 
