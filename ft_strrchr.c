@@ -19,11 +19,11 @@ char	*ft_strrchr(const char *s, int c)
 	temp = 0;
 	while (*s)
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 			temp = (char *)s;
 		++s;
 	}
-	if (*s == (char)c)
+	if (*s == (unsigned char)c)
 		return ((char *)s);
 	return (temp);
 }
